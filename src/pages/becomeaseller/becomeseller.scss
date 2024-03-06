@@ -1,0 +1,368 @@
+.becomeaseller {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+
+        video {
+            width: 100%;
+            height: 70vh;
+
+            object-fit: cover;
+
+
+        }
+
+        .videoCentre {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            color: white;
+            margin: auto;
+
+            h1 {
+                margin: 0;
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            button {
+                color: white;
+                background-color: #1dbf73;
+                font-weight: 500;
+                font-size: 18px;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                letter-spacing: 1px;
+            }
+
+
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            gap: 150px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            background-color: rgba($color: #fff, $alpha: 0.4);
+            height: 100px;
+            color: white;
+
+            li {
+                font-weight: 300;
+                font-size: 20px;
+                letter-spacing: 1px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+
+                span {
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+
+            }
+
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+
+
+
+        .community {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+
+
+
+            .card {
+                height: 300px;
+                width: 300px;
+                margin-bottom: 30px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                background-color: lightgray;
+
+
+
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                h2 {
+                    color: #fff;
+                    font-size: 28px;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    text-align: left;
+                }
+
+                button {
+                    color: white;
+                    background-color: #1dbf73;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 3px;
+                    letter-spacing: 1px;
+                    max-width: max-content;
+                    cursor: pointer;
+                }
+
+                span {
+                    letter-spacing: 1px;
+                    font-size: 35px;
+                    color: black;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+
+
+            }
+
+
+        }
+
+        .working {
+            background-color: lightgray;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            padding: 50px 130px;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .items {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    flex: 1;
+
+                    .icon {
+                        font-size: 50px;
+                    }
+
+                    .title {
+                        font-size: 25px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                    }
+
+                    .desc {
+                        text-align: center;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        font-weight: 300;
+                        line-height: 25px;
+                    }
+
+
+
+                }
+            }
+
+
+        }
+
+        .bottom {
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            span {
+                color: #555;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            button {
+                color: white;
+                background-color: #1dbf73;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 3px;
+                font-weight: 500;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    .popup {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000, $alpha: 0.3);
+        display: flex;
+        justify-content: center;
+
+
+
+
+        .content {
+            display: flex;
+            gap: 40px;
+            width: 600px;
+            height: max-content;
+            justify-content: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgb(217, 214, 214);
+            color: gray;
+            margin: 50px 0px;
+            position: relative;
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .left {
+                flex: 1;
+
+                .instructions {
+                    letter-spacing: 1px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: black;
+                    font-weight: 500;
+
+                }
+
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    list-style-type: none;
+
+
+                    li {
+                        line-height: 22px;
+                        letter-spacing: 1px;
+                        font-size: 12px;
+                        font-weight: 300;
+                        display: flex;
+                        gap: 10px;
+                        align-items: flex-start;
+                        font-weight: 300;
+                        color: #555;
+                    }
+
+                }
+            }
+
+            .right {
+                flex: 1;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                color: #555;
+
+
+
+                span {
+                    line-height: 25px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    text-align: center;
+
+                }
+
+
+                button {
+                    color: white;
+                    background-color: #1dbf73;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 3px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+
+                .message {
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+
+        }
+
+    }
+}
