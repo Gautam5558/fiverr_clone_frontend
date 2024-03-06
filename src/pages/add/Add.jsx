@@ -59,7 +59,7 @@ const Add = () => {
 
   const mutation = useMutation({
     mutationFn: (state) =>
-      axios.post("http://localhost:3000/api/gigs", state, {
+      axios.post(import.meta.env.VITE_BASE_URL + "/api/gigs", state, {
         withCredentials: true,
       }),
     onSuccess: () => {
