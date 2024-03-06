@@ -1,0 +1,110 @@
+.register {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        form {
+            display: flex;
+            gap: 80px;
+
+
+            .left,
+            .right {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input {
+                    padding: 10px;
+                    border: 1px solid lightgray;
+                    border-radius: 3px;
+                }
+
+                h1 {
+                    color: #555;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                label {
+                    color: gray;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+
+                button {
+                    background-color: #1dbf73;
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    margin-top: 10px;
+                }
+
+                .error {
+                    color: red;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+            }
+
+            .right {
+                gap: 35px;
+
+                .becomeaseller {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    transition: all 1s ease;
+                    cursor: pointer;
+
+                    .outer {
+
+                        width: 40px;
+                        height: 20px;
+                        border-radius: 40px;
+                        background-color: lightgray;
+                        display: flex;
+                        align-items: center;
+                        padding: 2px 4px;
+                        position: relative;
+
+                        .inner {
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background-color: white;
+                            position: absolute;
+
+                        }
+                    }
+
+                    .checked {
+                        transition: background-color 1s ease;
+                        background-color: royalblue;
+                        justify-content: flex-end;
+                    }
+                }
+
+                textarea {
+                    height: 145px;
+                    padding: 10px;
+                    border: 1px solid lightgray;
+
+                }
+            }
+
+
+        }
+
+
+    }
+}
